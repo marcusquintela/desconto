@@ -1,0 +1,139 @@
+<!--
+  Generated template for the ResultadoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>resultado</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid>
+
+
+      <ion-list>
+          <ion-item>
+            <ion-label color="primary" floating>Valor para calcular o desconto</ion-label>
+            <ion-input value="{{valorParaCalculo |  currency:'BRL':true:'1.2-2'}}"></ion-input> 
+          </ion-item>    
+        </ion-list>
+
+    <ion-row>
+      <ion-col>
+        <p>Percentual</p>     
+      </ion-col>
+      <ion-col>
+        <P>Desconto</P>          
+      </ion-col>
+      <ion-col>
+        <p>Valor</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <input ng-model="campoDinheiro" value="1%" class="resultado_input"/>          
+      </ion-col>
+      <ion-col>
+         <input ng-model="campoDinheiro" value="{{descontos.um.valorDoDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.um.valorMenosDesconto |  currency:'BRL':true:'1.2-2'}}" class="resultado_input"/>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <input ng-model="campoDinheiro" value="2%"  class="resultado_input"/> 
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.dois.valorDoDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.dois.valorMenosDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <input ng-model="campoDinheiro" value="5%"  class="resultado_input"/> 
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.cinco.valorDoDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.cinco.valorMenosDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <input ng-model="campoDinheiro" value="10%"  class="resultado_input"/> 
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.dez.valorDoDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.dez.valorMenosDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <input ng-model="campoDinheiro" value="11%"  class="resultado_input"/> 
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.onze.valorDoDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.onze.valorMenosDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <input ng-model="campoDinheiro" value="12%"  class="resultado_input"/> 
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.doze.valorDoDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.doze.valorMenosDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <input ng-model="campoDinheiro" value="15%"  class="resultado_input"/> 
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.quinze.valorDoDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.quinze.valorMenosDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <input ng-model="campoDinheiro" value="20%"  class="resultado_input"/> 
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.vinte.valorDoDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+      <ion-col>
+        <input ng-model="campoDinheiro" value="{{descontos.vinte.valorMenosDesconto |  currency:'BRL':true:'1.2-2'}}"  class="resultado_input"/>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+</ion-content>
